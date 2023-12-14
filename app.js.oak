@@ -253,10 +253,10 @@ fn draw {
 	// general canvas config
 	Ctx.lineCap := 'round'
 	Ctx.lineJoin := 'round'
-	Ctx.strokeStyle := '#000000'
+	Ctx.strokeStyle := '#f0eff1'
 
 	// setup for footprints
-	Ctx.fillStyle := '#cccccc'
+	Ctx.fillStyle := '#282828'
 	Footprints |> each(drawFootprint)
 
 	// to render burds, first we need to compute their true (x, y) if they are
@@ -304,7 +304,7 @@ Burds := range(BurdPopulation) |> map(fn(n) {
 	// the direction the burd is facing, in radians
 	direction: random.number(0, 2 * math.Pi)
 	color: random.choice([
-		'#000000'
+		'#181718'
 		'#f0eff1'
 	])
 })
